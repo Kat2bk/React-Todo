@@ -37,8 +37,9 @@ addItem = (item) => {
 }
 
 clearItem = () => {
-  this.setState({...this.state.items.filter(item => (
-    item.completed === true
+  this.setState({
+    items: this.state.items.filter(item => (
+    item.completed === false
   ))})
 }
 
