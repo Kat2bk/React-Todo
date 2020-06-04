@@ -1,6 +1,7 @@
 import React from 'react';
 import TodoList from "./components/TodoList";
 import TodoForm from "./components/TodoForm";
+import "./components/Todo.css"
 
 const items = [
   {
@@ -35,23 +36,22 @@ addItem = (item) => {
   })
 }
 
-clearItem = (event) => {
-  event.preventDefault();
+clearItem = () => {
   this.setState({...this.state.items.filter(item => (
     item.completed === true
   ))})
 }
 
-toggleCompleted = element => {
+toggleCompleted = (id) => {
   this.setState({
     items: this.state.items.map(tasks => {
-      if (element === tasks.id) {
+      if (tasks.id === id) {
         return {
           ...tasks,
           completed: !tasks.completed
         };
       }
-      return element;
+      return tasks;
     })
   })
 }
