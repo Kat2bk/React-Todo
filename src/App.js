@@ -42,17 +42,16 @@ clearItem = (event) => {
   ))})
 }
 
-toggleCompleted = item => {
-  console.log(item);
+toggleCompleted = element => {
   this.setState({
     items: this.state.items.map(tasks => {
-      if (item ===item.id) {
+      if (element === tasks.id) {
         return {
           ...tasks,
-          completed: !item.completed
+          completed: !tasks.completed
         };
       }
-      return item;
+      return element;
     })
   })
 }
