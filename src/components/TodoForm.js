@@ -27,9 +27,11 @@ render() {
         <div className="form-box">
         <form onSubmit={this.submitForm}>
             <input className="input" onChange={this.handleChange} value={this.state.item} type="text" name="task" />
-            <button type="submit">Add</button>
+            <button className="add-btn btn" type="submit">Add</button>
         </form>
-        <button className="clear-btn" onClick={this.props.clearItem}>Clear Completed</button>
+        <div className="button-box">
+        <button className="clear-btn btn" onClick={this.props.clearItem}>Clear Completed</button>
+        </div>
         </div>
     )
 }

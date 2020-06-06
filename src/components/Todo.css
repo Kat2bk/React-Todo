@@ -1,4 +1,75 @@
 
-.completed {
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+.item.completed {
 text-decoration: line-through;
+background-color: #777;
+}
+
+body {
+    background-color: #22264B;
+}
+
+.App-block {
+    padding: 4%;
+}
+
+.title-block {
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+}
+
+.title {
+    color: white;
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+    margin-top: 0;
+}
+
+.todo-list {
+    color: #CE3166;
+    margin: 50px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: 100px;
+}
+
+ .item {
+    background-color: #282F59;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #CE3166;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.input {
+    background-color: #F4563D;
+    width: 25%;
+    padding: 7px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+.btn {
+    background-color: #CE3166;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-box {
+   text-align: center;
 }

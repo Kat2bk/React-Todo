@@ -63,8 +63,10 @@ toggleCompleted = (id) => {
   // this component is going to take care of state, and any change handlers you need to work with your state
   render() {
     return (
-      <div>
-        <h2>Welcome to your Todo App!</h2>
+      <div className="App-block">
+        <div className="title-block">
+        <h2 className="title">Welcome to your Todo App!</h2>
+        </div>
         <TodoForm addItem={this.addItem} clearItem={this.clearItem}/>
         <TodoList item={this.state.items} toggleCompleted={this.toggleCompleted}/>
       </div>
