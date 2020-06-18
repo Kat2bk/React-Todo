@@ -28,7 +28,6 @@ body {
 }
 
 .todo-list {
-    color: #CE3166;
     margin: 50px;
     padding: 10px;
     display: grid;
@@ -43,9 +42,10 @@ body {
     font-size: 30px;
     text-align: center;
     border-radius: 10px;
-    border: 1px solid #CE3166;
     padding: 3px;
     cursor: pointer;
+    border: 1px solid #F4563D;
+    color: white;
 }
 
 .input {
@@ -58,6 +58,8 @@ body {
 
 form {
     text-align: center;
+    border: none;
+    outline: none;
 }
 
 .btn {
